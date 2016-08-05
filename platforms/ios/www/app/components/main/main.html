@@ -1,0 +1,77 @@
+<md-toolbar flex>
+  <div class="md-toolbar-tools top-toolbar" layout="row" layout-align="space-between center">
+    <md-button class="md-icon-button" aria-label="Menu" ng-click="main.toggle()">
+      <ng-md-icon icon="menu"></ng-md-icon>
+    </md-button>
+    <img class="logo" src="img/somowhitetext.png" alt="logo">
+    <div style="width: 40px; height: 40px;"></div>
+  </div>
+</md-toolbar>
+
+<md-sidenav class="md-sidenav-left" md-component-id="left">
+  <md-toolbar class="sidenav-toolbar">
+    <h1 class="md-toolbar-tools">SideNav Menu</h1>
+  </md-toolbar>
+  <md-list ng-cloak>
+    <md-list-item ng-href="http://www.google.com/design/spec/material-design/introduction.html">
+      <ng-md-icon icon="school"></ng-md-icon>
+      <p>Material Design</p>
+    </md-list-item>
+    <md-list-item ng-href="https://material.angularjs.org/latest/">
+      <ng-md-icon icon="settings_ethernet"></ng-md-icon>
+      <p>Angular Material</p>
+    </md-list-item>
+  </md-list>
+</md-sidenav>
+
+<!-- <div layout="column" layout-align="center center" flex>
+  <md-whiteframe class="md-whiteframe-3dp" layout="column" style="margin: 1em; width: 22em; height: 15em;" flex>
+    <div layout="column" flex style="margin-left: 1em;">
+      <h4>Project:</h4>
+      <p style="margin-top: -1em;">Cordova-Angular-AngularMaterial-Seed</p>
+      <h4>Created by:</h4>
+      <p style="margin-top: -1em;">MarioAleo</p>
+    </div>
+    <md-divider></md-divider>
+    <div layout="row" layout-align="space-around center" flex="20">
+      <md-button class="md-icon-button" aria-label="Project" ng-href="https://github.com/mario-aleo/cordova-angular-angularMaterial-seed">
+        <ng-md-icon icon="github-circle"></ng-md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="Creator" ng-href="https://github.com/mario-aleo">
+        <ng-md-icon icon="favorite"></ng-md-icon>
+      </md-button>
+    </div>
+  </md-whiteframe> -->
+
+<md-tabs md-no-pagination="true" md-stretch-tabs="always" md-align-tabs="bottom" md-dynamic-height="false" class="main-tabs">
+  <md-tab md-ink-ripple="true" >
+    <md-tab-label>
+      <ng-md-icon class="tab-icon" icon="tag_faces" size="45"></ng-md-icon>
+    </md-tab-label>
+    <md-tab-body>
+      <md-content layout-padding><emotions-list emotions="emotions"></emotions-list> </md-content>
+    </md-tab-body>
+  </md-tab>
+  <md-tab md-ink-ripple="true">
+    <md-tab-label>
+      <ng-md-icon class="tab-icon" icon="book" size="45"></ng-md-icon>    
+    </md-tab-label>
+    <md-tab-body>
+      <md-content layout-padding><journal></journal> </md-content>
+    </md-tab-body>
+  </md-tab>
+  <md-tab md-ink-ripple="true">
+    <md-tab-label>
+      <ng-md-icon class="tab-icon" icon="show_chart" size="45"></ng-md-icon>    
+    </md-tab-label>
+    <md-tab-body>
+      <md-content layout-padding><calendar days="days"></calendar></md-content>
+    </md-tab-body>
+  </md-tab>
+</md-tabs>
+
+  
+  <div layout="row">
+
+  </div>
+</div>

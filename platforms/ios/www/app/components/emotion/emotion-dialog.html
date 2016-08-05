@@ -1,0 +1,20 @@
+<md-dialog aria-label="Login" layout-padding>
+  <md-dialog-content>
+    <div layout-gt-sm="row">
+      <img ng-src="{{emotion.image}}" />
+    </div>
+    <div layout-gt-sm="row">
+      <h2>You are feeling {{emotion.name}}</h2>
+    </div>
+    <div layout-gt-sm="row">
+     <md-input-container class="md-block" flex-gt-sm>
+        <label>Want to tell me why?</label>
+        <input>
+      </md-input-container>
+    </div>
+  </md-dialog-content>
+  <md-dialog-actions>
+    <md-button ng-click="close()" class="md-primary">Nevermind</md-button>
+    <md-button ng-click="" class="md-primary">Ok, done!</md-button>
+  </md-dialog-actions>
+</md-dialog>

@@ -1,0 +1,113 @@
+$tab-bar-height: 76px;
+
+.login-container {
+	height: 100%;
+	width: 100%;
+	md-grid-list {
+		height: 400px;
+		img {
+			height: 500px;
+		}
+	}
+	.login-btn {
+		height: 80px;
+		font-family: Lato;
+		font-size: 20px;
+		border-radius: 50px;
+	}
+}
+
+.top-toolbar, .sidenav-toolbar, .login-container {
+	background: #fc8264;
+	background: -webkit-linear-gradient(top, #fc8264, #fda893);
+	background: -moz-linear-gradient(top, #fc8264, #fda893);
+	background: linear-gradient(top, #fc8264, #fda893);
+	.logo {
+		height: 174px;
+	}
+}
+
+.md-icon-button {
+	color: white;
+}
+
+.add-entry-btn {
+//	position: fixed !important;
+//	bottom: 30px;
+//	right: 16px;
+	top: auto;
+	right: 20px;
+	bottom: 20px;
+	left: auto;
+	position: fixed;
+}
+
+.main-tabs {
+	//height: calc(100% - $tab-bar-height);
+	height: 100%;
+	.md-stretch-tabs {
+		position: fixed;
+		background: white;
+		height: $tab-bar-height;
+		md-tab {
+			md-tab-label {
+				.tab-icon {
+					
+				}
+			}
+		}
+	}
+}
+
+.tab-title {
+	text-align: center;
+	font-family: Lato;
+	font-weight: normal;
+}
+
+.emotions-grid {
+	overflow-x: hidden;
+	.emotion-grid-item {
+	&:active {
+    	padding:6px 8px 6px 12px;
+	}
+		.emotion {
+			height: 100%;
+			width: 100%;
+			.md-button {
+				height: 100%;
+				width: 100%;
+				background: #fc8264 !important;
+				background: -webkit-linear-gradient(top, #fc8264, #fda893) !important;
+				background: -moz-linear-gradient(top, #fc8264, #fda893) !important;
+				background: linear-gradient(top, #fc8264, #fda893) !important;
+				border-radius: 18px;
+				border: solid white 10px;
+				&:hover {
+					background-color: #fda893 !important;
+				}
+				img {
+					height: 60px;
+				}
+			}
+		}
+	}
+}
+
+.journal-entry {
+	background: #fff8dc;
+}
+
+md-content {
+	overflow-x: hidden;
+}
+
+md-tab-content {
+	overflow: auto;
+	bottom: 106px !important;
+	overflow-x: hidden;
+}
+
+md-tabs-canvas, md-pagination-wrapper {
+	height: $tab-bar-height !important;	
+}

@@ -1,0 +1,62 @@
+$tab-bar-height: 76px;
+
+.top-toolbar, .sidenav-toolbar {
+	background: #fc8264;
+	background: -webkit-linear-gradient(top, #fc8264, #fda893);
+	background: -moz-linear-gradient(top, #fc8264, #fda893);
+	background: linear-gradient(top, #fc8264, #fda893);
+}
+
+.md-icon-button {
+	color: white;
+}
+
+.main-tabs {
+	//height: calc(100% - $tab-bar-height);
+	height: 100%;
+	.md-stretch-tabs {
+		position: fixed;
+		background: white;
+		height: $tab-bar-height;
+	}
+}
+
+.emotions-grid {
+	overflow-x: hidden;
+	.emotion-grid-item {
+		.emotion {
+			height: 100%;
+			width: 100%;
+			.md-button {
+				height: 100%;
+				width: 100%;
+				background: #fc8264 !important;
+				background: -webkit-linear-gradient(top, #fc8264, #fda893) !important;
+				background: -moz-linear-gradient(top, #fc8264, #fda893) !important;
+				background: linear-gradient(top, #fc8264, #fda893) !important;
+				border-radius: 18px;
+				border: solid white 10px;
+				&:hover {
+					background-color: #fda893 !important;
+				}
+				img {
+					height: 60px;
+				}
+			}
+		}
+	}
+}
+
+md-content {
+	overflow-x: hidden;
+}
+
+md-tab-content {
+	overflow: auto;
+	bottom: 106px !important;
+	overflow-x: hidden;
+}
+
+md-tabs-canvas, md-pagination-wrapper {
+	height: $tab-bar-height !important;	
+}

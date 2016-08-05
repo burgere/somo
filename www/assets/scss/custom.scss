@@ -1,0 +1,107 @@
+$tab-bar-height: 76px;
+
+md-content {
+	overflow-x: hidden;
+}
+
+md-tab-content {
+	overflow: auto;
+	bottom: 106px !important;
+	overflow-x: hidden;
+}
+
+md-tabs-canvas, md-pagination-wrapper {
+	height: $tab-bar-height !important;	
+}
+
+.md-icon-button {
+	color: white;
+}
+
+.journal-entry {
+	background: #fff8dc;
+}
+
+.login-container {
+	height: 100%;
+	width: 100%;
+	md-grid-list {
+		height: 400px;
+		img {
+			height: 500px;
+		}
+	}
+	.login-btn {
+		height: 80px;
+		font-family: Lato;
+		font-size: 20px;
+		border-radius: 50px;
+	}
+}
+
+.top-toolbar, .sidenav-toolbar, .login-container {
+	background: #fc8264;
+	background: -webkit-linear-gradient(top, #fc8264, #fda893);
+	background: -moz-linear-gradient(top, #fc8264, #fda893);
+	background: linear-gradient(top, #fc8264, #fda893);
+	.logo {
+		height: 174px;
+	}
+}
+
+.add-entry-btn {
+	position: fixed !important;
+	right: 0;
+	top: auto;
+}
+
+.main-tabs {
+	height: 100%;
+	.md-stretch-tabs {
+		position: fixed;
+		background: white;
+		height: $tab-bar-height;
+		md-tab {
+			md-tab-label {
+				.tab-icon {
+					
+				}
+			}
+		}
+	}
+}
+
+.tab-title {
+	text-align: center;
+	font-family: Lato;
+	font-weight: normal;
+}
+
+.emotions-grid {
+	overflow-x: hidden;
+	font-family: Lato;
+	.emotion-grid-item {
+	&:active {
+    	padding:6px 8px 6px 12px;
+	}
+		.emotion {
+			height: 100%;
+			width: 100%;
+			.md-button {
+				height: 100%;
+				width: 100%;
+				background: #fc8264 !important;
+				border-radius: 18px;
+				border: solid white 10px;
+				color: #FFFFFF;
+				&:hover {
+					background-color: #fda893 !important;
+				}
+				img {
+					height: 60px;
+					vertical-align: bottom;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+.login-container {
+  height: 100%;
+  width: 100%; }
+  .login-container md-grid-list {
+    height: 400px; }
+    .login-container md-grid-list img {
+      height: 500px; }
+  .login-container .login-btn {
+    height: 80px;
+    font-family: Lato;
+    font-size: 20px;
+    border-radius: 50px; }
+
+.top-toolbar, .sidenav-toolbar, .login-container {
+  background: #fc8264;
+  background: -webkit-linear-gradient(top, #fc8264, #fda893);
+  background: -moz-linear-gradient(top, #fc8264, #fda893);
+  background: linear-gradient(top, #fc8264, #fda893); }
+  .top-toolbar .logo, .sidenav-toolbar .logo, .login-container .logo {
+    height: 174px; }
+
+.md-icon-button {
+  color: white; }
+
+.add-entry-btn {
+  top: auto;
+  right: 20px;
+  bottom: 20px;
+  left: auto;
+  position: fixed; }
+
+.main-tabs {
+  height: 100%; }
+  .main-tabs .md-stretch-tabs {
+    position: fixed;
+    background: white;
+    height: 76px; }
+
+.tab-title {
+  text-align: center;
+  font-family: Lato;
+  font-weight: normal; }
+
+.emotions-grid {
+  overflow-x: hidden; }
+  .emotions-grid .emotion-grid-item:active {
+    padding: 6px 8px 6px 12px; }
+  .emotions-grid .emotion-grid-item .emotion {
+    height: 100%;
+    width: 100%; }
+    .emotions-grid .emotion-grid-item .emotion .md-button {
+      height: 100%;
+      width: 100%;
+      background: #fc8264 !important;
+      background: -webkit-linear-gradient(top, #fc8264, #fda893) !important;
+      background: -moz-linear-gradient(top, #fc8264, #fda893) !important;
+      background: linear-gradient(top, #fc8264, #fda893) !important;
+      border-radius: 18px;
+      border: solid white 10px; }
+      .emotions-grid .emotion-grid-item .emotion .md-button:hover {
+        background-color: #fda893 !important; }
+      .emotions-grid .emotion-grid-item .emotion .md-button img {
+        height: 60px; }
+
+.journal-entry {
+  background: #fff8dc; }
+
+md-content {
+  overflow-x: hidden; }
+
+md-tab-content {
+  overflow: auto;
+  bottom: 106px !important;
+  overflow-x: hidden; }
+
+md-tabs-canvas, md-pagination-wrapper {
+  height: 76px !important; }

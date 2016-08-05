@@ -1,0 +1,17 @@
+<md-dialog aria-label="Journal Entry" layout-padding>
+  <md-dialog-content>
+    <div layout-gt-sm="row">
+      <h2>Write it down!</h2>
+    </div>
+    <div layout-gt-sm="row">
+     <md-input-container class="md-block" flex-gt-sm>
+        <label>What are you thinking about?</label>
+        <input ng-model="text">
+      </md-input-container>
+    </div>
+  </md-dialog-content>
+  <md-dialog-actions>
+    <md-button ng-click="close()" class="md-primary">Nevermind</md-button>
+    <md-button ng-click="addJournalEntry(text)" class="md-primary">Ok, done!</md-button>
+  </md-dialog-actions>
+</md-dialog>
